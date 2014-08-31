@@ -1,3 +1,3 @@
-# One Month Rails
+# Ruby Pinterest-ish practice
 
-This is the pinteresting sample application for [*One Month Rails*] (http://onemonthrails.com)
+This is a smaple example of me attempting to jump onto the Ruby bandwagon. A sample pinterest-ish website. Let see where this goes....
