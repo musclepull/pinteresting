@@ -5,10 +5,18 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- For better mobile display -->
 </head>
 <body>
-<%= link_to "Home", root_path %> <%= link_to "About Us", about_path %> <%= link_to "Contact Us", contact_path %> 
-<%= yield %>
-
+	<%= render 'layouts/header' %>
+	<div class="container">
+		<%= yield %>
+	</div>
 </body>
+<div class="panel panel-default">
+ <div class="panel-footer"></div> 
+    &copy; 2013–14 Aravind Gopinath, Inc. All rights reserved. The information contained in Aravind's website may not be published, broadcast, rewritten, or redistributed without the prior written authority of Aravind Gopinath
+    <br><%= link_to "Privacy", privacy_path %> |  <%= link_to "Terms of Service", terms_path %> | <%= link_to "About", about_path %>  | <%= link_to "Contact", contact_path %></br>
+</div>
 </html>
+
