@@ -13,10 +13,14 @@
 		<%= yield %>
 	</div>
 </body>
+
 <div class="panel panel-default">
- <div class="panel-footer"></div> 
-    &copy; 2013–14 Aravind Gopinath, Inc. All rights reserved. The information contained in Aravind's website may not be published, broadcast, rewritten, or redistributed without the prior written authority of Aravind Gopinath
-    <br><%= link_to "Privacy", privacy_path %> |  <%= link_to "Terms of Service", terms_path %> | <%= link_to "About", about_path %>  | <%= link_to "Contact", contact_path %></br>
+    <div class="panel-body">  &copy; 2013–14 Aravind Gopinath, Inc. All rights reserved. The information contained in Aravind's website may not be published, broadcast, rewritten, or redistributed without the prior written authority of Aravind Gopinath</div> 
+
+    <!--<div class="panel-footer clearfix">-->
+        <div class="pull-left">
+           <%= link_to "Privacy", privacy_path %> |  <%= link_to "Terms of Service", terms_path %> | <%= link_to "About", about_path %>  | <%= link_to "Contact", contact_path %>
+        </div>
+    </div>
 </div>
 </html>
-
