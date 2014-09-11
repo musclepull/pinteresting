@@ -27,6 +27,9 @@ gem 'spring',        group: :development
 # Add the Bootstrap gem
 gem 'bootstrap-sass'
 
+# Add the Devise gem to log in and sign up users
+gem 'devise', '~>3.3.0'
+
 group :development, :test do
      gem 'sqlite3'
 end
