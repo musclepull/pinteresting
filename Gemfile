@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -27,8 +26,8 @@ gem 'spring',        group: :development
 # Add the Bootstrap gem
 gem 'bootstrap-sass'
 
-# Add the Devise gem to log in and sign up users
-gem 'devise', '~>3.3.0'
+# Add the Devise gem
+gem 'devise', '~> 3.3.0'
 
 group :development, :test do
      gem 'sqlite3'
