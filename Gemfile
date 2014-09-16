@@ -29,6 +29,25 @@ gem 'bootstrap-sass'
 # Add the Devise gem
 gem 'devise', '~> 3.3.0'
 
+# Forms, mail {
+gem 'mail_form', '~> 1.5.0'
+gem 'simple_form', '~> 3.0.2'
+# }
+
+# for the static about page 
+gem 'high_voltage'
+
+# Development (Optional) {
+gem 'better_errors', group: :development
+gem 'quiet_assets', group: :development
+# }
+# Development Guard {
+gem 'guard-rails', group: :development
+gem 'guard-livereload', group: :development
+gem 'rack-livereload', group: :development
+gem 'guard-bundler', group: :development
+#}
+
 group :development, :test do
      gem 'sqlite3'
 end
@@ -37,6 +56,8 @@ group :production do
      gem 'pg'   # production uses PostGREs database
      gem 'rails_12factor' # introduced with Rails 4
 end
+
+
 
 
 # Use ActiveModel has_secure_password

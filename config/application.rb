@@ -21,6 +21,6 @@ module Pinterest
     # config.i18n.default_locale = :de
 
     #required for Heroku devise
-    #config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = false
   end
 end
